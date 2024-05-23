@@ -6,7 +6,10 @@ https://dockerlabs.es
 
 ## ENUMERACION
 
-`┌──(kali㉿kali)-[~]    
+```bash
+sudo nmap -p- --open -sS --min-rate 5000 -vvv -n -Pn 172.17.0.2 -oG allPorts
+
+┌──(kali㉿kali)-[~]    
 └─$ nmap -p- --min-rate 5000 -sCV 172.17.0.2 
 Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-05-23 10:29 EDT
 Nmap scan report for 172.17.0.2
@@ -14,7 +17,7 @@ Host is up (0.00014s latency).
 Not shown: 65534 closed tcp ports (conn-refused)
 PORT   STATE SERVICE VERSION
 21/tcp open  ftp     vsftpd 2.3.4
-Service Info: OS: Unix`
+Service Info: OS: Unix
 
 
 ## ANALISIS DE VULNERABILIDADES
