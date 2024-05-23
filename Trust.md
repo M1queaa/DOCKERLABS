@@ -4,6 +4,7 @@ https://dockerlabs.es
 *23/5/2024*
 
 ## ENUMERACION
+
 nmap
 ```
 └─$ nmap -p- --open --min-rate 5000 -sCV 172.17.0.2
@@ -21,12 +22,12 @@ PORT   STATE SERVICE VERSION
 |_http-server-header: Apache/2.4.57 (Debian)
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
-servidor apache
+Servidor apache
 ```
 └─$ whatweb 172.17.0.2
 http://172.17.0.2 [200 OK] Apache[2.4.57], Country[RESERVED][ZZ], HTTPServer[Debian Linux][Apache/2.4.57 (Debian)], IP[172.17.0.2], Title[Apache2 Debian Default Page: It works]
 ```
-listando directorios
+Listando directorios
 ```
 └─$ gobuster dir -u http://172.17.0.2/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x php,txt,html,php.wak
 ===============================================================
@@ -55,13 +56,15 @@ Finished
 ===============================================================
 ```
 
+
 ## ANALISIS DE VULNERABILIDADES
 
 ![image](https://github.com/M1queaa/DOCKERLABS/assets/108646257/2300bc9c-6002-45d2-9d2e-6f490360e9be)
 
-```
+
 Vemos que en la pagina que encontramos hay un usuario el cual podremos usar para hacer un ataque de fuerza bruta al puerto ssh
-```
+
+
 
 ## EXPLOTACION
 
