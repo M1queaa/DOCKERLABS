@@ -5,10 +5,9 @@ https://dockerlabs.es
 
 
 ## ENUMERACION
-'''
 
-┌──(kali㉿kali)-[~]
-
+``
+┌──(kali㉿kali)-[~] 
 └─$ nmap -p- --min-rate 5000 -sCV 172.17.0.2 
 Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-05-23 10:29 EDT
 Nmap scan report for 172.17.0.2
@@ -17,8 +16,8 @@ Not shown: 65534 closed tcp ports (conn-refused)
 PORT   STATE SERVICE VERSION
 21/tcp open  ftp     vsftpd 2.3.4
 Service Info: OS: Unix
+``
 
-'''
 ## ANALISIS DE VULNERABILIDADES
 ┌──(kali㉿kali)-[~]
 └─$ searchsploit vsftpd 2.3.4
