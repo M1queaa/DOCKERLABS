@@ -6,7 +6,9 @@ https://dockerlabs.es
 
 ## ENUMERACION
 '''
+
 ┌──(kali㉿kali)-[~]
+
 └─$ nmap -p- --min-rate 5000 -sCV 172.17.0.2 
 Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-05-23 10:29 EDT
 Nmap scan report for 172.17.0.2
@@ -16,9 +18,6 @@ PORT   STATE SERVICE VERSION
 21/tcp open  ftp     vsftpd 2.3.4
 Service Info: OS: Unix
 
-Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-Nmap done: 1 IP address (1 host up) scanned in 3.68 seconds
-                                                            
 '''
 ## ANALISIS DE VULNERABILIDADES
 ┌──(kali㉿kali)-[~]
