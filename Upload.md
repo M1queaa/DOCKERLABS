@@ -60,9 +60,11 @@ Esta pagina que descrubrimos funciona con php y permite cargar archivos para lue
 ## EXPLOTACION
 
 Crearemos un archivo .php el cual genere una reverse shell, puedes utilizar esta pagina para generarla, descargarla por github o crearla tu mismo
+
 ![image](https://github.com/M1queaa/DOCKERLABS/assets/108646257/507a7464-bb1c-4abd-8d9e-f4baa5e1cd6d)
 
 Lo cargamos a la pagina
+
 ![image](https://github.com/M1queaa/DOCKERLABS/assets/108646257/c9436da4-3a09-49de-ac7c-ae4dc3746ecb)
 
 Nos ponemos en escucha por el puerto 443
@@ -72,6 +74,7 @@ listening on [any] 443 ...
 ```
 
 Y lo ejecutamos por medio del navegador
+
 ![image](https://github.com/M1queaa/DOCKERLABS/assets/108646257/d64cdff7-94a2-4c26-aa09-5adbdf32764b)
 
 Y nos devolvera una reverse shell
